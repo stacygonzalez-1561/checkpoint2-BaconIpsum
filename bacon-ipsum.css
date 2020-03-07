@@ -1,0 +1,24 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1.3fr 1.2fr;
+    grid-template-areas: "logo about about" "welcome welcome welcome" "bacon1 bacon2 bacon3";
+}
+.logo {
+    grid-area: logo;
+}
+.about {
+    grid-area: about;
+}
+.welcome {
+    grid-area: welcome;
+}
+.bacon1 {
+    grid-area: bacon1;
+}
+.bacon2 {
+    grid-area: bacon2;
+}
+.bacon3 {
+    grid-area: bacon3;
+}
