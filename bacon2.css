@@ -1,0 +1,39 @@
+body {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+.all {
+    width: 700px;
+    height: 500px;
+    object-fit: cover;
+}
+.bunny {
+    width: 700px;
+    height: 500px;
+    object-fit: cover;
+}
+header {
+    font-family: 'Playfair Display', serif;
+    color: #f46731;
+}
+p {
+    font-size: 20px;
+    text-align: justify;
+    text-indent: 30px;
+}
+p::first-letter {
+    font-size: 40px;
+    color: #f46731;
+}
+@media (min-width: 576px) and (max-width: 992px) {
+    .all {
+        width: 300px;
+        height: 300px;
+        object-fit: contain;
+    }
+    .bunny {
+        width: 300px;
+        height: 300px;
+        object-fit: contain;
+    }
+}

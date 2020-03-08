@@ -6,27 +6,137 @@
 }
 .logo {
     grid-area: logo;
+    font-family: 'Trade Winds', cursive;
+    background-color: #2bcdc0;
+    padding-left: 25px;
+    color: #33a8dd;
+    text-shadow: 2px 2px #1b1b1b;
 }
 .about {
     grid-area: about;
+    font-family: 'Viaoda Libre', cursive;
+    background-color: #2bcdc0;
+    color: #f46731;
+    text-align: right;
+    padding-right: 30px;
+    padding-top: 25px;
+    font-weight: bold;
+}
+#apage {
+    border: 3px solid #1b1b1b;
+    border-radius: 15px;
+    padding: 5px;
+    font-size: 20px;
 }
 .welcome {
     grid-area: welcome;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Viaoda Libre', cursive;
+    background-color: #2bcdc0;
+    color: white;
+    font-size: 30px; 
+    padding-bottom: 50px;
+    
 }
 .bacon1 {
     grid-area: bacon1;
+    font-family: 'Viaoda Libre', cursive;
+    background-color: #1b1b1b;
+    color: white;
+    text-align: center;
+    padding: 10px 80px 75px;
 }
 .bacon2 {
     grid-area: bacon2;
+    font-family: 'Viaoda Libre', cursive;
+    background-color: #1b1b1b;
+    color: white;
+    text-align: center;
+    padding: 10px 80px 75px;
 }
 .bacon3 {
     grid-area: bacon3;
+    font-family: 'Viaoda Libre', cursive;
+    background-color: #1b1b1b;
+    color: white;
+    text-align: center;
+    padding: 10px 80px 75px;
 }
 .facebook {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
 }
 .instagram {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
+}
+.one {
+    width: 100px;
+    height: 25px;
+    background-color: #33a8dd;
+    text-align: center;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-top: 25px;
+}
+.two {
+    width: 100px;
+    height: 25px;
+    background-color: #f46731;
+    text-align: center;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-top: 25px;
+}
+.three {
+    width: 100px;
+    height: 25px;
+    background-color: #2bcdc0;
+    text-align: center;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin: 25px;
+}
+.b1 {
+    text-decoration: none;
+    color: white;
+}
+.b1:hover {
+    color: #33a8dd;
+}
+.b2 {
+    text-decoration: none;
+    color: white;
+}
+.b2:hover {
+    color: #f46731;
+}
+.b3 {
+    text-decoration: none;
+    color: white;
+}
+.b3:hover {
+    color: #2bcdc0;
+}
+@media (min-width: 576px) and (max-width: 992px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.8fr 1.2fr 1fr 1fr 1fr;
+        grid-template-areas: "logo about" "welcome welcome" "bacon1 bacon1" "bacon2 bacon2" "bacon3 bacon3";
+    }
+    .one {
+        padding-left: 100px;
+        padding-right: 200px;
+    }
+    .two {
+        padding-left: 100px;
+        padding-right: 200px;
+    }
+    .three {
+        padding-left: 100px;
+        padding-right: 200px;
+    }
 }
