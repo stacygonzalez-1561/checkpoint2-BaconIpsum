@@ -1,0 +1,157 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "mission mission mission mission" "about about about about" "team1 team2 team3 team4" "video video video video";
+}
+body {
+    background-color: #1b1b1b;
+}
+.mission {
+    grid-area: mission;
+    font-family: 'Crimson Text', serif;
+    font-weight: bold;
+    color: #33a8dd;
+    text-align: center;
+    padding-top: 25px;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+.mission > h1 {
+    font-size: 40px;
+}
+.mission > p {
+    font-size: 30px;
+}
+.about {
+    grid-area: about;
+    font-family: 'Crimson Text', serif;
+    font-weight: bold;
+    color: #f46731;
+    text-align: center;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+.about > h1 {
+    font-size: 40px;
+}
+.about > p {
+    font-size: 30px;
+}
+.team1 {
+    grid-area: team1;
+    font-family: 'Crimson Text';
+    color: #2bcdc0;
+    letter-spacing: 3px;
+   
+}
+.team2 {
+    grid-area: team2;
+    font-family: 'Crimson Text';
+    color: #2bcdc0;
+}
+.team2 > h1 {
+    text-align: right;
+    font-family: 'Crimson Text', serif;
+    color: #2bcdc0;
+    font-size: 40px;
+}
+.team2 > h3 {
+    letter-spacing: 3px;
+}
+.team3 {
+    grid-area: team3;
+    text-align: right;
+    font-family: 'Crimson Text', serif;
+    color: #2bcdc0;
+}
+.team3 > h1 {
+    text-align: left;
+    margin-left: 5px;
+    font-family: 'Crimson Text', serif;
+    color: #2bcdc0;
+    font-size: 40px;
+}
+.team3 > h3 {
+    letter-spacing: 3px;
+}
+.team4 {
+    grid-area: team4;
+    text-align: right;
+    font-family: 'Crimson Text', serif;
+    color: #2bcdc0;
+    letter-spacing: 3px;
+}
+.video {
+    grid-area: video;
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    height: 0;
+}
+.a {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.mobile {
+    display: none;
+}
+@media (min-width: 576px) and (max-width: 991px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: .5fr .5fr .5fr .5fr .5fr .5fr .5fr;
+        grid-template-areas: "mission" "about" "team1" "team2" "team3" "team4" "video";
+    }
+    body {
+        margin: 0;
+        padding:0;
+    }
+    .mission {
+        grid-area: mission;
+        padding: 0;
+    }
+    .about {
+        grid-area: about;
+        padding: 0;
+    }
+    .team1 {
+        grid-area: team1;
+        display: flex;
+        justify-content: center;
+    }
+    .team2 {
+        grid-area: team2;
+        display: flex;
+        justify-content: center;
+    }
+    .team2 > h1 {
+        display: none;
+    }
+    .team3 {
+        grid-area: team3;
+        display: flex;
+        justify-content: center;
+    }
+    .team3 > h1 {
+        display: none;
+    }
+    .team4 {
+        grid-area: team4;
+        display: flex;
+        justify-content: center;
+    }
+    .video {
+        grid-area: video;
+        display: flex;
+        justify-content: center;
+        width: 500px;
+        height: 500px;
+        object-fit: contain;
+    }
+}

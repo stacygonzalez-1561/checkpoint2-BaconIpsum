@@ -27,6 +27,11 @@
     border-radius: 15px;
     padding: 5px;
     font-size: 20px;
+    text-decoration: none;
+    color: #f46731;
+}
+#apage:hover {
+    color: white;
 }
 .welcome {
     grid-area: welcome;
